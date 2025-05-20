@@ -137,6 +137,7 @@ The project includes several visualization methods for analyzing model behavior:
 * Visualization tools for model interpretability
 * Word-level  accuracy evaluation
 * Experiment logging and analysis with Weights & Biases
+* wandb Report Link : https://wandb.ai/cs24m048-iit-madras/da6401_assignment_3/reports/DA6401-Assignment-3--VmlldzoxMjgxNjc1MA?accessToken=ca9g2gz454z7agb6hd6u8ngm4fgpfyuekbixfbsrjkr46qyliiiulphs5ss72te7
 
 ## 📝 Results and Analysis
 
