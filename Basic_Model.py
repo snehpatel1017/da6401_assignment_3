@@ -135,8 +135,8 @@ def calculate_word_accuracy(preds, tgt, pad_idx=0, sos_idx=None, eos_idx=None):
 
 
 def train_model(config=None):
-    with wandb.init(config=config,project="da6401_assignment_3", entity="cs24m048-iit-madras"):
-        config = wandb.config
+    # with wandb.init(config=config,project="da6401_assignment_3", entity="cs24m048-iit-madras" ):
+    #     config = wandb.config
 
         # Load dataset
         lang_code = config.lang_code

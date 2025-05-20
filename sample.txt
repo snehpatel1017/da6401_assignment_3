@@ -1,0 +1,39 @@
+best : val_acc = 40%
+batch_size:
+    value: 64
+cell_type:
+    value: GRU
+dropout:
+    value: 0.2
+embed_dim:
+    value: 64
+epochs:
+    value: 10
+hidden_dim:
+    value: 256
+lang_code:
+    value: hi
+lr:
+    value: 0.0005
+num_layers:
+    value: 3
+
+worst: val_acc = 7%
+batch_size:
+    value: 64
+cell_type:
+    value: RNN
+dropout:
+    value: 0.2
+embed_dim:
+    value: 128
+epochs:
+    value: 10
+hidden_dim:
+    value: 128
+lang_code:
+    value: hi
+lr:
+    value: 0.001
+num_layers:
+    value: 3
