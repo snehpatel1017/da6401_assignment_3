@@ -309,7 +309,7 @@ def train_model(config):
         train_acc = calculate_accuracy(model, train_loader, device)
         val_acc = calculate_accuracy(model, val_loader, device)
         test_acc = calculate_accuracy(model, test_loader, device)
-        wandb.log({"epoch": epoch, "loss": total_loss / len(train_loader), "val_accuracy": val_acc , "test_accuracy":test_acc,"train_accuracy":train_acc , "val_loss":total_loss / len(train_loader)})
+        # wandb.log({"epoch": epoch, "loss": total_loss / len(train_loader), "val_accuracy": val_acc , "test_accuracy":test_acc,"train_accuracy":train_acc , "val_loss":total_loss / len(train_loader)})
         print(f"Epoch {epoch+1}/{config.epochs} | Loss: {total_loss/len(train_loader):.4f} | "
               f"Train Acc: {train_acc*100:.2f}% | Val Acc: {val_acc*100:.2f}% Test Acc: {test_acc*100:.2f}%")
         if val_acc > best_val_acc:

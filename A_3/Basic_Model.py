@@ -198,7 +198,7 @@ def train_model(config=None):
                     test_acc += calculate_word_accuracy(output, tgt, pad_idx=pad_idx, sos_idx=sos_idx, eos_idx=eos_idx)
             val_acc /= len(val_loader)
             test_acc /= len(test_loader)
-            wandb.log({"epoch": epoch, "loss": total_loss / len(train_loader), "val_accuracy": val_acc , "test_accuracy":test_acc,"train_accuracy":train_acc , "val_loss":val_loss})
+            # wandb.log({"epoch": epoch, "loss": total_loss / len(train_loader), "val_accuracy": val_acc , "test_accuracy":test_acc,"train_accuracy":train_acc , "val_loss":val_loss})
             print(f"Epoch {epoch}, Loss: {total_loss / len(train_loader)}, Train Accuracy: {train_acc}, Val Accuracy: {val_acc}, Test Accuracy: {test_acc}, Validation loss: {val_loss}")
         return (model , dataset_test , test_loader , device)
             
