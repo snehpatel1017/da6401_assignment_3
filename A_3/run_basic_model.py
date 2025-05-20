@@ -27,5 +27,7 @@ config = Config()
 
 # wandb.login(key="2b8654ea1d7143307fd59d1ea1bda5bc9f6fef77")
 # wandb.init(project="da6401_assignment_3", entity="cs24m048-iit-madras" , name="test_prediction_grid_without_attention")
+
+# train the model
 model , dataset , test_loader , device = train_model(config)
 # best_table = log_test_predictions(model, dataset, test_loader, device, n_samples=len(test_loader))
